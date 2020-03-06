@@ -62,6 +62,7 @@
         <Button x:Name="btnStampa" Content="Stampa" FontSize="18"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="677,290,0,0" Height="34" Click="btnStampa_Click"/>
         <TextBox x:Name="txtAnni"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="144,207,0,0"/>
 
+        
     </Grid>
 </Window>
 
