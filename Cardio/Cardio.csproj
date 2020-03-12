@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>cuore.ico</ApplicationIcon>
+    <ApplicationIcon>cuore %283%29.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -99,6 +99,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="cuore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cuore %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cuore %283%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
