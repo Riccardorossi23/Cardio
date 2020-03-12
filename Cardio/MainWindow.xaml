@@ -5,49 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardio"
         mc:Ignorable="d"
-        Title="Cardio" Height="450" Width="900">
+        Title="Cardio" Height="600" Width="900">
     <Grid>
         <Label Content="Cognome" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="0,36,0,0"/>
         <Label Content="Nome" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="0,85,0,0"/>
         <Label Content="Sesso" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="0,138,0,0"/>
         <Label Content="Quanti anni hai?" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="0,207,0,0"/>
-        <Label Content="Sport" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,95,0,0"/>
         <TextBox x:Name="txtCognome" TextAlignment="Center" HorizontalAlignment="Left"   Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="109,36,0,0" RenderTransformOrigin="0.478,2.577"/>
         <TextBox x:Name="txtNome"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="109,95,0,0"/>
         <RadioButton x:Name="M" Content="M" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="109,150,0,0" Height="34"/>
         <RadioButton x:Name="F" Content="F" HorizontalAlignment="Left"   FontSize="18" VerticalAlignment="Top" Margin="168,150,0,0" Height="34"/>
-        <ComboBox x:Name="sport" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="120" Margin="512,95,0,0" Height="34">
-            <ComboBoxItem Content="Triathlon"></ComboBoxItem>
-            <ComboBoxItem Content="Pallanuoto"></ComboBoxItem>
-            <ComboBoxItem Content="Crossfit"></ComboBoxItem>
-            <ComboBoxItem Content="Bodybuilding"></ComboBoxItem>
-            <ComboBoxItem Content="Motociclismo"></ComboBoxItem>
-            <ComboBoxItem Content="Atletica Leggera"></ComboBoxItem>
-            <ComboBoxItem Content="Nuoto"></ComboBoxItem>
-            <ComboBoxItem Content="Calcio"></ComboBoxItem>
-            <ComboBoxItem Content="Cricket"></ComboBoxItem>
-            <ComboBoxItem Content="Basket"></ComboBoxItem>
-            <ComboBoxItem Content="Hockey"></ComboBoxItem>
-            <ComboBoxItem Content="Tennis"></ComboBoxItem>
-            <ComboBoxItem Content="Pallavolo"></ComboBoxItem>
-            <ComboBoxItem Content="Ping Pong"></ComboBoxItem>
-            <ComboBoxItem Content="Baseball"></ComboBoxItem>
-            <ComboBoxItem Content="Rugby"></ComboBoxItem>
-            <ComboBoxItem Content="Football Americano"></ComboBoxItem>
-            <ComboBoxItem Content="Golf"></ComboBoxItem>
-            <ComboBoxItem Content="Gualdo Catteneo"></ComboBoxItem>
-        </ComboBox>
         <Label Content="Ore d'allenamento:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,34,0,0"/>
         <Label Content="Kg:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="10,258,0,0"/>
-        <Label Content="Calorie:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,160,0,0"/>
-        <Label Content="Bpm Max:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,234,0,0"/>
-        <Label Content="Bpm Spotivo efficenti:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,290,0,0"/>
+        <Label Content="Calorie:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,234,0,0"/>
+        <Label Content="Bpm Max:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,114,0,0"/>
+        <Label Content="Bpm Spotivo efficenti:" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="316,170,0,0"/>
         <TextBox x:Name="txtOre"  TextAlignment="Center"  HorizontalAlignment="Left"   Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,36,0,0"/>
         <TextBox x:Name="txtKg"   TextAlignment="Center" HorizontalAlignment="Left" Height="34"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="144,258,0,0"/>
-        <TextBox IsEnabled="False" x:Name="txtCalorie"  TextAlignment="Center"  HorizontalAlignment="Left" Height="34"   TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,160,0,0"/>
-        <TextBox IsEnabled="False" x:Name="txtMax"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,234,0,0" />
-        <TextBox IsEnabled="False"  x:Name="txtSportivo"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,290,0,0"/>
-        <Label x:Name="lblRisultato" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,345,0,0" Width="911" Height="68" RenderTransformOrigin="0.5,0.5">
+        <TextBox IsEnabled="False" x:Name="txtCalorie"  TextAlignment="Center"  HorizontalAlignment="Left" Height="34"   TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,234,0,0"/>
+        <TextBox IsEnabled="False" x:Name="txtMax"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,114,0,0" />
+        <TextBox IsEnabled="False"  x:Name="txtSportivo"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="512,160,0,0"/>
+        <Label x:Name="lblRisultato" FontSize="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,498,0,0" Width="886" Height="68" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -58,11 +36,15 @@
             </Label.RenderTransform>
         </Label>
         <Button x:Name="btnRisultato" Content="Risultato" FontSize="18"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="677,36,0,0" Height="34" Click="btnRisultato_Click"/>
-        <Button x:Name="btnNuovo" Content="Nuovo" FontSize="18"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="677,160,0,0" Height="34" Click="btnNuovo_Click"/>
-        <Button x:Name="btnStampa" Content="Stampa" FontSize="18"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="677,290,0,0" Height="34" Click="btnStampa_Click"/>
+        <Button x:Name="btnNuovo" Content="Nuovo" FontSize="18"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="677,183,0,0" Height="34" Click="btnNuovo_Click"/>
+        <Button x:Name="btnStampa" Content="Stampa" FontSize="18"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="677,367,0,0" Height="34" Click="btnStampa_Click"/>
         <TextBox x:Name="txtAnni"  TextAlignment="Center"  HorizontalAlignment="Left"  Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="144,207,0,0"/>
+        <Label Content="Il mio battito è:" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="316,391,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="txtrisultato" IsEnabled="false" HorizontalAlignment="Left" Height="34" Margin="512,391,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="battiti a riposo:" HorizontalAlignment="Left" FontSize="18" Height="47" Margin="316,316,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox TextAlignment="Center"  x:Name="txtriposo" HorizontalAlignment="Left" Height="30" Margin="512,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
-        
+
     </Grid>
 </Window>
 
