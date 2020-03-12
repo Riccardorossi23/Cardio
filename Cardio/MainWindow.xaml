@@ -44,6 +44,7 @@
         <Label Content="battiti a riposo:" HorizontalAlignment="Left" FontSize="18" Height="47" Margin="316,316,0,0" VerticalAlignment="Top" Width="138"/>
         <TextBox TextAlignment="Center"  x:Name="txtriposo" HorizontalAlignment="Left" Height="30" Margin="512,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
        
+        
     </Grid>
 </Window>
 
