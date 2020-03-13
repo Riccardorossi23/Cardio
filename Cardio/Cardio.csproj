@@ -98,12 +98,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="cuore.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="cuore %281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="cuore %283%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

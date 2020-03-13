@@ -78,7 +78,7 @@ namespace Cardio
             }
          
 
-            lblRisultato.Content = ($"{name} {surname}, {sesso} il {anni}. Si allena {ore} per il suo peso corporiro di:{kg}, i bpm masimo è {max} per un allenamento efficace deve avere i battiti a {sportivo},i tuoi battiti a riposo sono{bpmriposo}qundi sei {bpmrisultato}le calorie bruciate sono {Kcal} Kcal");
+            lblRisultato.Content = ($"{name} {surname}, {sesso} il {anni}. Si allena {ore} per il suo peso corporiro di:{kg}, i bpm masimo è {max} per un allenamento efficace deve avere i battiti a {sportivo},i tuoi battiti a riposo sono {bpmriposo} qundi sei {bpmrisultato},le calorie bruciate sono {Kcal} Kcal");
             bpm.Add($"{surname};{name}; {sesso};{anni};{kg};{ore};{max};{sportivo};{bpmriposo};{bpmrisultato};{Kcal}");
         }
 
@@ -98,7 +98,8 @@ namespace Cardio
             txtMax.IsEnabled = false;
             txtCalorie.IsEnabled = false;
             txtrisultato.IsEnabled = false;
-
+            txtrisultato.Clear();
+            txtriposo.Clear();
 
         }
 
